@@ -8,3 +8,8 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+
+let myArray = ['text', 23, null];
+console.log(myArray);
+myArray[1]='45';
+console.log(myArray);
