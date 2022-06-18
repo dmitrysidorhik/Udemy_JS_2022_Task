@@ -10,3 +10,12 @@
  *
  * 5. Перепишите функцию так, чтобы результат возвращался неявно
  */
+
+const sayHello = () => {
+    return 'Привет, мир (явно)';
+}
+console.log(sayHello());
+
+const sayHelloMod = () => 'Привет, мир (неявно)';
+
+console.log(sayHelloMod());
