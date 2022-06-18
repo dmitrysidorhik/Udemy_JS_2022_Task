@@ -9,4 +9,7 @@
  */
 
 const myCountry = 'Belarus';
+const myCity = 'Minsk';
+
 console.log(myCountry);
+console.log(myCity);
