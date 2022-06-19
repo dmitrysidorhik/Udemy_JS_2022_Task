@@ -8,5 +8,10 @@
  * 3. Проверьте ассоциативность самостоятельно
  */
 
-const myNumber1 = 10 // 10 = 3 + 3 + 3 + 1
-const myNumber2 = 3
+const myNumber1 = 10; // 10 = 3 + 3 + 3 + 1
+const myNumber2 = 3;
+
+const myNumber = myNumber1 % myNumber2;
+console.log(myNumber);
+
+console.log(((500 % 45) % 12) % 3);
