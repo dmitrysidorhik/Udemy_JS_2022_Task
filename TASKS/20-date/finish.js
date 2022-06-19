@@ -4,3 +4,8 @@
  *
  * 2. Выведите значение в консоль
  */
+
+const nowDate = new Date();
+console.log(nowDate);
+const nowDateMs = nowDate.getTime();
+console.log(nowDateMs);
