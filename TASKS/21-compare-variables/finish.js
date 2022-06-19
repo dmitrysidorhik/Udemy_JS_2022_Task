@@ -9,9 +9,19 @@
 let myVariable1 = 10
 let myVariable2 = '5'
 
-// Напишите код здесь
+console.log(typeof myVariable2);
+console.log(typeof parseInt(myVariable2))
+console.log(typeof myVariable2)
+console.log('-----------------------------');
+
+console.log(+myVariable2);
+console.log(typeof +myVariable2)
+console.log(typeof myVariable2)
+console.log('-----------------------------');
+
+console.log((parseInt(myVariable1) <= parseInt(myVariable2))); 
+
 
 myVariable1 = '20'
 myVariable2 = 100
-
-// Напишите код здесь
+console.log((parseInt(myVariable1) <= parseInt(myVariable2))); 
