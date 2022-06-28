@@ -13,4 +13,6 @@
  * "Сообщение номер 5"
  */
 let a = 0;
-setInterval(() => console.log(`Сообщение номер ${++a}`), 2000);
+const idFun = setInterval(() => console.log(`Сообщение номер ${++a}`), 2000);
+console.log(`id ${idFun}`);
+setTimeout(() => clearInterval(idFun), 11000);
