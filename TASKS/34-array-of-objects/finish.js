@@ -26,4 +26,4 @@ cars.push(newCars);
 console.log(cars);
 cars.forEach((element) => {
   console.log(element);
-});
+}); 
