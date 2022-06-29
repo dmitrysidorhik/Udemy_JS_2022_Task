@@ -1,7 +1,10 @@
-import sumImp from "./moduleOne.mjs";
+import { one, two as twoImp, sum } from "./moduleOne.mjs";
 
-const result = sumImp(4, 5);
+const result = sum(4, 5);
 console.log(result);
 
-const result2 = sumImp(9, 5);
-console.log(result2);
+console.log(one);
+console.log(twoImp);
+
+
+//node .\moduleTwo.mjs - запуск файла
