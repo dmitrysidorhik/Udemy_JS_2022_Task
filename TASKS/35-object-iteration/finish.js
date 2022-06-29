@@ -9,7 +9,31 @@
 const myObject = {
   key1: true,
   key5: 10,
-  key3: 'abc',
+  key3: "abc",
   key4: null,
   key10: NaN,
+};
+
+for (key in myObject) {
+  console.log(key + " " + myObject[key]);
 }
+console.log("-----");
+
+for (key in myObject) {
+  if (key === "key1" || key === "key3") {
+    console.log(myObject[key]);
+  }
+}
+console.log("-----");
+
+const keysObject = Object.keys(myObject);
+console.log(keysObject);
+const valuesObject = Object.values(myObject);
+console.log(valuesObject);
+console.log("-----");
+
+keysObject.forEach((key) => {
+  if (key === "key1" || key === "key3") {
+    console.log(myObject[key]);
+  }
+});
