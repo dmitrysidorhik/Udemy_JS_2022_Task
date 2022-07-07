@@ -19,4 +19,9 @@ const getDate = async(url) => {
 //     .catch(error => console.log(error.message))
 
 const url = 'https://jsonplaceholder.typicode.com/todos/23'
-const data = await getDate(url)
+try {
+    const data = await getDate(url)
+    console.log(data)
+} catch (error) {
+    console.log(error.message)
+}
