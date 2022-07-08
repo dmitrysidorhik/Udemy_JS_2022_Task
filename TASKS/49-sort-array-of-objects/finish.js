@@ -9,35 +9,44 @@
  * 3. Оригинальный массив должен остаться без изменений
  */
 
-const inputProducts = [
-  {
-    title: 'Phone case',
-    price: 23,
-    quantity: 2,
-    category: 'Accessories',
-  },
-  {
-    title: 'Android phone',
-    price: 150,
-    quantity: 1,
-    category: 'Phones',
-  },
-  {
-    title: 'Headphones',
-    price: 78,
-    quantity: 1,
-    category: 'Accessories',
-  },
-  {
-    title: 'Sport Watch',
-    price: 55,
-    quantity: 2,
-    category: 'Watches',
-  },
+const sortProductsByPrice = (products) => {
+    // const copyOfProducts = [...products]
+    // return copyOfProducts.sort((a, b) => a.price - b.price)
+    return [...products].sort((a, b) => a.price - b.price) //сокращение
+}
+
+const inputProducts = [{
+        title: 'Phone case',
+        price: 23,
+        quantity: 2,
+        category: 'Accessories',
+    },
+    {
+        title: 'Android phone',
+        price: 150,
+        quantity: 1,
+        category: 'Phones',
+    },
+    {
+        title: 'Headphones',
+        price: 78,
+        quantity: 1,
+        category: 'Accessories',
+    },
+    {
+        title: 'Sport Watch',
+        price: 55,
+        quantity: 2,
+        category: 'Watches',
+    },
 ]
 
-// const sortedProducts = sortProductsByPrice(inputProducts)
+const sortedProducts = sortProductsByPrice(inputProducts)
 
-// console.log(sortedProducts) // Массив отсортированных товаров
+console.log(sortedProducts) // Массив отсортированных товаров
 
-// console.log(inputProducts) // Оригинальный массив не должен измениться
+console.log(inputProducts) // Оригинальный массив не должен измениться
+
+const myNumbers = [40, 23, 29, 178, 10]
+console.log(myNumbers.sort()) // не корректная сортровка, т.к. sort -> в строки
+console.log(myNumbers.sort((a, b) => a - b))
